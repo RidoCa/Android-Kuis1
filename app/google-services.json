@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "226224165979",
+    "firebase_url": "https://tesku-127e9.firebaseio.com",
+    "project_id": "tesku-127e9",
+    "storage_bucket": "tesku-127e9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:226224165979:android:66cef2acc294e443",
+        "android_client_info": {
+          "package_name": "com.rido.kuisq"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "226224165979-976lmsro9me7rp8h9q41lah714p727ke.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDNkpPiGr8gJUiGGT2NNRRpBWWBSQatkY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
