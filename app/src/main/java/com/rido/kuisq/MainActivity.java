@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         mDatabase = FirebaseDatabase.getInstance().getReference().child("datamahasiswa");
         mDatabase.keepSynced(true);
 
-        mList=(RecyclerView)findViewById(R.id.myrecycleview);
+        mList= findViewById(R.id.myrecycleview);
         mList.setHasFixedSize(true);
         mList.setLayoutManager(new LinearLayoutManager(this));
 
@@ -36,10 +36,10 @@ public class MainActivity extends AppCompatActivity {
                 (mahasiswa.class,R.layout.card_row,mahasiswaViewHolder.class,mDatabase){
             @Override
             protected void populateViewHolder(mahasiswaViewHolder viewHolder, mahasiswa model, int position) {
-                viewHolder.setNama(model.getNama());
-                viewHolder.setJurusan(model.getJurusan());
-                viewHolder.setNim(model.getNim());
-                viewHolder.setSosmed(model.getSosmed());
+                viewHolder.setNama("Nama    : "+model.getNama());
+                viewHolder.setJurusan("Jurusan : "+model.getJurusan());
+                viewHolder.setNim("Nim        : "+model.getNim());
+                viewHolder.setSosmed("Sosmed : "+model.getSosmed());
             }
         };
 
@@ -54,22 +54,22 @@ public class MainActivity extends AppCompatActivity {
         }
 
         public void setNama(String nama){
-            TextView post_nama=(TextView)mView.findViewById(R.id.nama);
+            TextView post_nama= mView.findViewById(R.id.nama);
             post_nama.setText(nama);
         }
 
         public void setJurusan(String jurusan){
-            TextView post_jurusan=(TextView)mView.findViewById(R.id.jurusan);
+            TextView post_jurusan= mView.findViewById(R.id.jurusan);
             post_jurusan.setText(jurusan);
         }
 
         public void setNim(String nim){
-            TextView post_nim=(TextView)mView.findViewById(R.id.nim);
+            TextView post_nim= mView.findViewById(R.id.nim);
             post_nim.setText(nim);
         }
 
         public void setSosmed(String sosmed){
-            TextView post_sosmed=(TextView)mView.findViewById(R.id.sosmed);
+            TextView post_sosmed= mView.findViewById(R.id.sosmed);
             post_sosmed.setText(sosmed);
         }
     }

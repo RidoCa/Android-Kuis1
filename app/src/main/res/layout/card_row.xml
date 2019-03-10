@@ -10,15 +10,25 @@
 
 <LinearLayout
     android:layout_width="match_parent"
-    android:layout_height="248dp"
+    android:layout_height="170dp"
     android:orientation="vertical"
-    android:background="#121111">
+    android:background="#b55555">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Data Mahasiswa"
+        android:layout_marginBottom="20dp"
+        android:textColor="#FFFFFF"
+        android:textAlignment="center"
+        android:textSize="20dp"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/nama"
         android:text="Nama"
+        android:layout_marginLeft="10dp"
         android:textColor="#FFFFFF"
         android:textSize="20dp"/>
 
@@ -26,6 +36,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/jurusan"
+        android:layout_marginLeft="10dp"
         android:text="Jurusan"
         android:textColor="#FFFFFF"
         android:textSize="20dp"/>
@@ -35,6 +46,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/nim"
         android:text="Nim"
+        android:layout_marginLeft="10dp"
         android:textColor="#FFFFFF"
         android:textSize="20dp"/>
 
@@ -42,6 +54,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/sosmed"
+        android:layout_marginLeft="10dp"
         android:text="Sosmed"
         android:textColor="#FFFFFF"
         android:textSize="20dp"/>
